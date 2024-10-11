@@ -1,0 +1,62 @@
+{
+  "name": "adkit-admin-panel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predev": "ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx",
+    "prebuild": "cross-env NODE_ENV=production ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx",
+    "g:page": "hygen page new",
+    "doc": "serve docs"
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.17.2",
+    "@ant-design/icons": "^5.2.6",
+    "@heroicons/react": "^2.0.18",
+    "@tanstack/react-query": "^5.4.3",
+    "@tinymce/tinymce-react": "^4.3.0",
+    "antd": "^5.10.2",
+    "axios": "^1.6.0",
+    "leaflet": "^1.9.4",
+    "lodash": "^4.17.21",
+    "next": "^14.2.14",
+    "prismjs": "^1.29.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-leaflet": "^4.2.1",
+    "recharts": "^2.9.0"
+  },
+  "devDependencies": {
+    "@ant-design/static-style-extract": "^1.0.2",
+    "@flydotio/dockerfile": "^0.4.10",
+    "@types/node": "^20.8.9",
+    "@types/react": "18.3.11",
+    "cross-env": "^7.0.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "hygen": "^6.2.11",
+    "serve": "^14.2.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
+}

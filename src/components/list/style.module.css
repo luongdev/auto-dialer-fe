@@ -1,0 +1,23 @@
+.listItem,
+.listItemDark {
+  position: relative;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.listItem:hover {
+  background-color: #efefef;
+}
+
+.listItemDark:hover {
+  background-color: #2b2b2b;
+}
+
+.listItem .editIcon {
+  width: 50px;
+  display: none;
+}
+
+.listItem:hover .editIcon {
+  display: flex;
+}
