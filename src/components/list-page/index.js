@@ -51,7 +51,7 @@ const ListPage = ({
     }
   };
 
-  React.useEffect(fetchApiAction, [fetchApi]);
+  React.useEffect(fetchApiAction);
 
   return (
     <Table

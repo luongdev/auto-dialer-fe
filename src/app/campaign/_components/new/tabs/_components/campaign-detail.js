@@ -1,5 +1,4 @@
 import { Col, Row, Form, Input, DatePicker, TimePicker } from 'antd';
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
 
 const { RangePicker: DateRangePicker } = DatePicker;
 const { RangePicker: TimeRangePicker } = TimePicker;
